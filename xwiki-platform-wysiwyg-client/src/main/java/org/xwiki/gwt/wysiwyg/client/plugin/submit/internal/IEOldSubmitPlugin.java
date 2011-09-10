@@ -17,33 +17,26 @@
  * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
  * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
  */
-package org.xwiki.gwt.wysiwyg.client.plugin.submit;
+package org.xwiki.gwt.wysiwyg.client.plugin.submit.internal;
 
 import org.xwiki.gwt.dom.client.Element;
+import org.xwiki.gwt.wysiwyg.client.plugin.submit.SubmitPlugin;
 
 /**
- * Internet Explorer specific implementation of {@link SubmitPlugin}.
+ * Specific implementation of {@link SubmitPlugin} for older versions of Internet Explorer (6, 7 and 8).
  * 
  * @version $Id$
  */
-public class IESubmitPlugin extends SubmitPlugin
+public class IEOldSubmitPlugin extends SubmitPlugin
 {
-    /**
-     * {@inheritDoc}
-     * 
-     * @see SubmitPlugin#hookSubmitEvent(Element)
-     */
+    @Override
     protected native void hookSubmitEvent(Element form)
     /*-{
         var handler = this.@org.xwiki.gwt.wysiwyg.client.plugin.submit.SubmitPlugin::getSubmitHandler()();
         form.attachEvent('onsubmit', handler);
     }-*/;
 
-    /**
-     * {@inheritDoc}
-     * 
-     * @see SubmitPlugin#unhookSubmitEvent(Element)
-     */
+    @Override
     protected native void unhookSubmitEvent(Element form)
     /*-{
         var handler = this.@org.xwiki.gwt.wysiwyg.client.plugin.submit.SubmitPlugin::getSubmitHandler()();
