@@ -67,6 +67,6 @@ public class GwtXdomEditor extends AbstractTemplateEditor<XDOM> implements Initi
     @Override
     public void initialize() throws InitializationException
     {
-        this.editorDescriptorBuilder.setId(ROLE_HINT).setCategory("Wysiwyg");
+        this.editorDescriptorBuilder.setId(ROLE_HINT).setCategory("wysiwyg");
     }
 }
