@@ -51,7 +51,7 @@
     <dependency>
       <groupId>org.xwiki.platform</groupId>
       <artifactId>xwiki-platform-web</artifactId>
-      <version>${project.version}</version>
+      <version>${platform.version}</version>
       <type>war</type>
       <scope>runtime</scope>
     </dependency>
@@ -59,7 +59,7 @@
       <!-- Jetty throws an exception if it can't find the root web app -->
       <groupId>org.xwiki.platform</groupId>
       <artifactId>xwiki-platform-tool-rootwebapp</artifactId>
-      <version>${project.version}</version>
+      <version>${platform.version}</version>
       <type>war</type>
       <scope>runtime</scope>
     </dependency>
@@ -102,7 +102,7 @@
       <plugin>
         <groupId>org.xwiki.platform</groupId>
         <artifactId>xwiki-platform-tool-packager-plugin</artifactId>
-        <version>${project.version}</version>
+        <version>${platform.version}</version>
         <executions>
           <execution>
             <phase>generate-test-resources</phase>
@@ -138,7 +138,7 @@
           <plugin>
             <groupId>org.xwiki.platform</groupId>
             <artifactId>xwiki-platform-tool-packager-plugin</artifactId>
-            <version>${project.version}</version>
+            <version>${platform.version}</version>
             <dependencies>
               <dependency>
                 <groupId>com.atlassian.clover</groupId>

@@ -39,14 +39,14 @@
     <dependency>
       <groupId>org.xwiki.platform</groupId>
       <artifactId>xwiki-platform-gwt-user</artifactId>
-      <version>${project.version}</version>
+      <version>${platform.version}</version>
       <!-- Only needed at build time -->
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.xwiki.platform</groupId>
       <artifactId>xwiki-platform-gwt-dom</artifactId>
-      <version>${project.version}</version>
+      <version>${platform.version}</version>
       <!-- Only needed at build time -->
       <scope>provided</scope>
     </dependency>

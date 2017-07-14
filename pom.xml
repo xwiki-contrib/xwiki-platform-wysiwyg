@@ -25,12 +25,17 @@
   <parent>
     <groupId>org.xwiki.platform</groupId>
     <artifactId>xwiki-platform-core</artifactId>
-    <version>9.7-SNAPSHOT</version>
+    <version>9.6-rc-1</version>
   </parent>
   <artifactId>xwiki-platform-wysiwyg</artifactId>
+  <version>9.7-SNAPSHOT</version>
   <name>XWiki Platform - WYSIWYG Editor - Parent POM</name>
   <packaging>pom</packaging>
   <description>Parent POM for the WYSIWYG editor modules</description>
+  <properties>
+    <!-- Skip ValidateDependencyVersion (expects project.version instead of platform.version) -->
+    <xwiki.enforcer.skip>true</xwiki.enforcer.skip>
+  </properties>
   <modules>
     <module>xwiki-platform-wysiwyg-client</module>
     <module>xwiki-platform-wysiwyg-plugin-api</module>

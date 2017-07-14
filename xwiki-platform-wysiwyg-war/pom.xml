@@ -42,14 +42,14 @@
     <dependency>
       <groupId>org.xwiki.platform</groupId>
       <artifactId>xwiki-platform-gwt-dom</artifactId>
-      <version>${project.version}</version>
+      <version>${platform.version}</version>
       <!-- To ensure it's not going to be in the WAR, we specify what to include below anyway... -->
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.xwiki.platform</groupId>
       <artifactId>xwiki-platform-gwt-user</artifactId>
-      <version>${project.version}</version>
+      <version>${platform.version}</version>
       <!-- To ensure it's not going to be in the WAR, we specify what to include below anyway... -->
       <scope>provided</scope>
     </dependency>
